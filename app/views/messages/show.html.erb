@@ -1,0 +1,8 @@
+<p style="color: green"><%= notice %></p>
+
+<%= turbo_frame_tag "message" do %>
+  <%= link_to "Edit this message", edit_message_path(@message) %>
+
+  <%= render @message %>
+<% end %>
+
